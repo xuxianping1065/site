@@ -1,0 +1,47 @@
+drop table if exists USER;
+
+/*==============================================================*/
+/* Table: USER                                                  */
+/*==============================================================*/
+create table USER
+(
+   ID                   int(12) not null comment '唯一标识',
+   USERNAME             char(20) comment '用户名',
+   PASSWORD             char(20) comment '密码',
+   NAME                 char(20) comment '昵称',
+   STATUS               int(12) comment '状态',
+   primary key (ID)
+);
+
+alter table USER comment '用户表';
+
+
+drop table if exists USER_ROLE;
+
+/*==============================================================*/
+/* Table: USER_ROLE                                             */
+/*==============================================================*/
+create table USER_ROLE
+(
+   USER_ID              int(12) comment '用户ID',
+   ROLE_ID              int(12) comment '角色ID'
+);
+
+alter table USER_ROLE comment '用户、角色关联表';
+
+
+drop table if exists ROLE;
+
+/*==============================================================*/
+/* Table: ROLE                                                  */
+/*==============================================================*/
+create table ROLE
+(
+   ID                   int(12) not null comment '唯一标识',
+   NAME                 char(30) comment '名称',
+   DESCRIPTION          char(200) comment '描述',
+   STATUS               int(12) comment '状态',
+   primary key (ID)
+);
+
+alter table ROLE comment '角色表';

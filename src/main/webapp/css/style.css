@@ -1,0 +1,31 @@
+/*!
+ * Custom style css
+ */
+.page-content {
+	position: relative;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	padding-left: 100px;
+	margin-bottom: 60px;
+	background-color: #020031;
+	font-size: 24px;
+  	text-align: left;
+}
+
+.my-nav {
+	margin-bottom: 0;
+	background-color: #fff;
+	border-bottom: 0
+}
+
+.page-content h1 {
+	color: #fff;
+	font-size: 60px;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+
+.lead {
+	color: #fff;
+	font-size: 30px;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
